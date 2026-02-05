@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Строчные и блочные элементы</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section{background-color: aquamarine;}
+        .main-section{margin-bottom: 25px; background-color: #ffc9c9;}
+        a{text-decoration: none; color: #000; cursor: cell;}
+        </style>
 </head>
 <body>
+    <header>Hello</header>
+    <address>Hello</address>
+    <div>Hello</div>
     <section class="main-section">
         <h1>Привет</h1>
         <h3>еше привет</h3>
@@ -18,19 +27,21 @@
                 <li>второй</li>
                 <li>третий</li>
             </ul>
-            <ul style="width: 20%; display: inline-block;">
+            <ul class="list-u" id="list-u" style="width: 20%; display: inline-block;">
                 <li>первый</li>
                 <li>второй</li>
                 <li>третий</li>
             </ul>
-            <ul style="width: 20%; display: inline-block;">
-                <li>первый</li>
-                <li>второй</li>
-                <li>третий</li>
+            <ul  id="list-u"  style="width: 20%; display: inline-block;">
+                <strong><li>первый</li></strong>
+                <b><li>второй</li></b>
+                <u><i><li>третий</li></i></u>
             </ul>
         </div>
         <span>Спан элемент строчный</span>
         <a href="second.html">Перейти на секонд страницу</a>
     </section>
+    <section>322222222222</section>
+    <section class="main-section">322222222222</section>
 </body>
 </html>
