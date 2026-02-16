@@ -1,50 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>тестируем свойство display</title>
     <style>
-        .three-block-text p{
+        .three-block-text p {
             display: inline-block;
             min-width: 300px;
             max-width: 350px;
             width: 30%;
             padding: 5px 12px;
         }
-        .three-block-text, .next-block{
+
+        .three-block-text,
+        .next-block {
             font-size: 25px;
             color: rgb(119 104 115);
         }
-        .three-block-flex-text{
+
+        .three-block-flex-text {
             display: flex;
             gap: 20px;
         }
-        .three-block-flex-text p{
-              
-        }
-        footer{
+
+        .three-block-flex-text p {}
+
+        footer {
             height: 100px;
             width: 100%;
-            position: fixed;
-            bottom: 0;
+            /* position: relative;
+            bottom: 0; */
             background-color: aqua;
-            margin-top: 500px;
+            margin-top: 10px;
+            text-align: center;
+            flex: 0 0 auto;
         }
-        .ava-block-flex-text{
+
+        .ava-block-flex-text {
             display: flex;
         }
-        img{
+
+        img {
             width: 87%;
+        }
+
+        footer {
+            padding: 15px 0;
+            max-height: fit-content;
+        }
+
+        header {
+            background-color: aquamarine;
+            height: fit-content;
+            width: 100%;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1 0 auto;
+            /* Растягивается, занимая всё свободное место */
+        }
+
+        footer {
+            flex: 0 0 auto;
+            /* Футер имеет фиксированную высоту, не растягивается */
         }
     </style>
 </head>
+
 <body>
+    <div class="content">
     <!-- start блок трёх колонок -->
     <div class="three-block-text another-class">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis nobis ea? Velit, hic.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis nobis ea? Velit, hic.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis nobis ea? Velit, hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
+            repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
+            nobis ea? Velit, hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
+            repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
+            nobis ea? Velit, hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
+            repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
+            nobis ea? Velit, hic.</p>
     </div>
     <!-- END блок трёх колонок -->
     <div class="next-block">
@@ -54,12 +99,27 @@
     </div>
     <!-- start flex блок трёх колонок -->
     <div class="three-block-flex-text">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis nobis ea? Velit, hic.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis nobis ea? Velit, hic.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis nobis ea? Velit, hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
+            repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
+            nobis ea? Velit, hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
+            repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
+            nobis ea? Velit, hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
+            repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
+            nobis ea? Velit, hic.</p>
     </div>
+    <header>
+        <menu>
+            <span>frgfdgdr</span>
+            <span>frgfdgdr</span>
+            <span>frgfdgdr</span>
+            <span>frgfdgdr</span>
+            <span>frgfdgdr</span>
+        </menu>
+    </header>
     <!-- END flex блок трёх колонок -->
-     <div class="ava-block-flex-text">
+    <div class="ava-block-flex-text">
         <div style="margin: 25px;">
             <img src="ava.png" alt="">
             <ul>
@@ -68,8 +128,12 @@
                 <li>link</li>
             </ul>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis nobis ea? Velit, hic.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis nobis ea? Velit, hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
+            repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
+            nobis ea? Velit, hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
+            repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
+            nobis ea? Velit, hic.</p>
     </div>
     <div style="display: flex;">
         <ul style="min-width: 45%;">
@@ -87,6 +151,10 @@
             <li>lkkfd</li>
         </ol>
     </div>
-     <!-- <footer></footer> -->
+    </div>
+    <footer>
+        <span>fdddddddddddddddddddddddd</span>
+    </footer>
 </body>
+
 </html>

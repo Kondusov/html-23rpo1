@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="iz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        html{
+            /* font-size: 20px */
+        }
+        section{
+            flex-wrap: wrap;
+            display: flex;
+            font-size: 18px;
+        }
+        section p{
+            padding: 0 15px;
+            
+            min-width: 200px;
+        }
+        .p1{
+            order: 2;
+            flex: 1;
+        }
+        
+        .p2{
+            flex: 2;
+            order: 1;
+            font-size: 1.5em;
+            font-size: 1.5rem;
+
+        }
+        div p{
+            display: inline-block;
+            width: 24%;
+            box-sizing: border-box;
+            padding: 0 15px;
+            font-size: 1rem
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p class="p1"> 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officia ducimus, fuga eaque quia laboriosam, velit commodi, maxime repudiandae in facere modi iste laudantium consequuntur obcaecati culpa! At, commodi omnis?</p>
+        <p class="p1"> 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officia ducimus, fuga eaque quia laboriosam, velit commodi, maxime repudiandae in facere modi iste laudantium consequuntur obcaecati culpa! At, commodi omnis?</p>
+        <p class="p2">2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officia ducimus, fuga eaque quia laboriosam, velit commodi, maxime repudiandae in facere modi iste laudantium consequuntur obcaecati culpa! At, commodi omnis?</p>
+        <p class="p2">2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officia ducimus, fuga eaque quia laboriosam, velit commodi, maxime repudiandae in facere modi iste laudantium consequuntur obcaecati culpa! At, commodi omnis?</p>
+    </section>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aliquid ratione architecto perferendis ea laudantium optio eligendi harum modi aspernatur exercitationem, adipisci totam. At perferendis est deserunt saepe voluptatibus doloremque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aliquid ratione architecto perferendis ea laudantium optio eligendi harum modi aspernatur exercitationem, adipisci totam. At perferendis est deserunt saepe voluptatibus doloremque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aliquid ratione architecto perferendis ea laudantium optio eligendi harum modi aspernatur exercitationem, adipisci totam. At perferendis est deserunt saepe voluptatibus doloremque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aliquid ratione architecto perferendis ea laudantium optio eligendi harum modi aspernatur exercitationem, adipisci totam. At perferendis est deserunt saepe voluptatibus doloremque.</p>
+    </div>
+</body>
+</html>
