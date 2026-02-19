@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body{
+            margin: 0;
+             /* min-height: 100vh; */
+             display: flex;
+             flex-direction: column;
+        }
+        footer{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: aquamarine;
+            /* position: fixed;
+            bottom: 0;
+            left: 0; */
+            /* margin-top: 300px; */
+        }
+        #text{
+            flex: 1;
+        }
+        .main-nav{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(251, 174, 116);
+            position: fixed;
+            top: 0;
+               
+                width: 100%;
+        }
+        .next-block{
+             margin-top: 43px;
+        }
+        .sticky{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(137, 211, 199);
+            position: sticky;
+            top: 0;
+               
+                width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <p><a href="#text">Ссылка</a></p>
+        <p><a href="#">Ссылка</a></p>
+        <p><a href="#">Ссылка</a></p>
+        <p><a href="#">Ссылка</a></p>
+        <p><a href="#">Ссылка</a></p>
+    </nav>
+    <div class="next-block">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    </div>
+    <!-- start flex блок трёх колонок -->
+    <div class="three-block-flex-text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
+            repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
+            nobis ea? Velit, hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
+            repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
+            nobis ea? Velit, hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
+            repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
+            nobis ea? Velit, hic.</p>
+    </div>
+     <nav class="sticky">
+        <p><a href="#text">Ссылка</a></p>
+        <p><a href="#">Ссылка</a></p>
+        <p><a href="#">Ссылка</a></p>
+        <p><a href="#">Ссылка</a></p>
+        <p><a href="#">Ссылка</a></p>
+    </nav>
+    <div class="next-block">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    </div>
+    <!-- start flex блок трёх колонок -->
+    <div class="three-block-flex-text" id="text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
+            repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
+            nobis ea? Velit, hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
+            repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
+            nobis ea? Velit, hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
+            repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
+            nobis ea? Velit, hic.</p>
+    </div>
+    <footer>
+         <p><a href="#text">Ссылка</a></p>
+        <p><a href="#">Ссылка</a></p>
+        <p><a href="#">Ссылка</a></p>
+        <p><a href="#">Ссылка</a></p>
+        <p><a href="#">Ссылка</a></p>
+    </footer>
+</body>
+</html>

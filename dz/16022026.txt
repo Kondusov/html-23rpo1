@@ -8,6 +8,3 @@ https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Styling_basics/
 единицы измерения знать (https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Styling_basics/Values_and_units
 
 Попробовать использовать эти свойства (скиньте ваш код)
-
-10-08 ДК
-10-35ИГ

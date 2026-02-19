@@ -1,0 +1,13 @@
+https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Styling_basics/Values_and_units
+https://developer.mozilla.org/ru/docs/Web/CSS/Reference/Properties/z-index
+любые источники!
+
+- абсолютные и относительные единицы
+- z-index
+- overflow
+- visibility hidden
+- display: none;
+        }
+
+Прочтите, напишите код используя данные свойства.
+Скиньте код и будьте готовы ответить на вопросы по этим темам.
