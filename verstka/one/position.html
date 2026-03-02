@@ -45,6 +45,27 @@
                 width: 100%;
 
         }
+        .rel-abs{
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background-color: aqua;
+        }
+        .rel-abs p{
+            width: 55px;
+            height: 55px;
+            position: absolute;
+        }
+        .rel-abs .sqare1{
+            background-color: brown;
+            top: 0;
+            right: 0;
+        }
+        .rel-abs .sqare2{
+            background-color: brown;
+            top: 0;
+            left: 0;
+        }
     </style>
 </head>
 <body>
@@ -84,6 +105,10 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
     </div>
+    <div class="rel-abs">
+        <p class="sqare1"></p>
+        <p class="sqare2"></p>
+    </div>
     <!-- start flex блок трёх колонок -->
     <div class="three-block-flex-text" id="text">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam delectus qui. Fuga nemo
@@ -96,7 +121,7 @@
             repudiandae similique perspiciatis maxime quae blanditiis laborum odit, voluptas accusantium impedit debitis
             nobis ea? Velit, hic.</p>
     </div>
-    <footer>
+    <footer id="footer">
          <p><a href="#text">Ссылка</a></p>
         <p><a href="#">Ссылка</a></p>
         <p><a href="#">Ссылка</a></p>

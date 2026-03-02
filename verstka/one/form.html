@@ -1,0 +1,31 @@
+<style>
+    form input, form label{
+        display: block;
+    }
+    label input{
+        display: inline;
+    }
+</style>
+<form action="" id="reg-form" method="GET">
+    <input type="text" placeholder="Введите имя" required>
+    <label for="age">Введите ваш возраст</label>
+    <input id="age" type="number" name="age" value="18" min="18">
+    <input type="email" placeholder="example@test.ru">
+    <input type="password">
+    <input type="color" value="#db1414">
+    <input type="file">
+    <input type="date">
+    <input type="time">
+    <label><input type="radio" name="r" value="1">
+        Выберите радио 1</label>
+    
+    <label><input type="radio" name="r"  value="2" checked>
+        Выберите радио 2
+    </label>
+    
+    <label><input type="radio" name="r" value="3">
+        Выберите радио 3</label>
+    
+    <input type="checkbox" checked required>
+    <input type="submit" >
+</form>
